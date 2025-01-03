@@ -1,0 +1,75 @@
+<div class="solicitud-container shadow p-4 rounded">
+  <h1 class="text-center mb-4">Formulario de Solicitud</h1>
+  <p class="text-center text-muted mb-5">Por favor, completa el formulario para solicitar nuestros servicios.</p>
+
+  <form>
+    <!-- Nombre del cliente -->
+    <div class="form-group mb-4">
+      <label for="nombre" class="form-label">Nombre Completo:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        class="form-control"
+        placeholder="Ingresa tu nombre completo"
+        required
+      />
+    </div>
+
+    <!-- Correo electrónico -->
+    <div class="form-group mb-4">
+      <label for="email" class="form-label">Correo Electrónico:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="Ingresa tu correo electrónico"
+        required
+      />
+    </div>
+
+    <!-- Teléfono -->
+    <div class="form-group mb-4">
+      <label for="telefono" class="form-label">Teléfono:</label>
+      <input
+        type="tel"
+        id="telefono"
+        name="telefono"
+        class="form-control"
+        placeholder="Ingresa tu número de teléfono"
+        required
+      />
+    </div>
+
+    <!-- Selección del servicio -->
+    <div class="form-group mb-4">
+      <label for="servicio" class="form-label">Selecciona el Servicio:</label>
+      <select id="servicio" name="servicio" class="form-select" required>
+        <option value="">Selecciona un servicio</option>
+        <option value="software">Reparación de Software</option>
+        <option value="impresoras">Mantenimiento de Impresoras</option>
+        <option value="datos">Recuperación de Datos</option>
+        <option value="formateo">Formateo y Reinstalación</option>
+        <option value="programas">Instalación de Programas</option>
+      </select>
+    </div>
+
+    <!-- Mensaje adicional -->
+    <div class="form-group mb-4">
+      <label for="mensaje" class="form-label">Mensaje Adicional:</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        class="form-control"
+        rows="4"
+        placeholder="Escribe un mensaje adicional..."
+      ></textarea>
+    </div>
+
+    <!-- Botón de envío -->
+    <div class="text-center">
+      <button type="submit" class="btn btn-success btn-lg shadow-sm">Enviar Solicitud</button>
+    </div>
+  </form>
+</div>

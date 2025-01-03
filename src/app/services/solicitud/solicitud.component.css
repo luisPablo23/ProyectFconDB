@@ -1,0 +1,72 @@
+/* General Styles */
+.solicitud-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+.solicitud-container h1 {
+  font-size: 2rem;
+  color: #333333;
+}
+
+.solicitud-container p {
+  color: #777777;
+  font-size: 1rem;
+}
+
+/* Labels */
+.form-label {
+  font-weight: bold;
+  color: #555555;
+}
+
+/* Inputs */
+.form-control,
+.form-select {
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+  outline: none;
+}
+
+/* Button */
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  box-shadow: 0 5px 15px rgba(33, 136, 56, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .solicitud-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .btn-success {
+    width: 100%;
+  }
+}
+/**/

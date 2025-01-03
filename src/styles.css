@@ -1,0 +1,91 @@
+/* Estilos generales para el contenedor de contacto */
+.contact-container {
+  background-color: #f8f9fa; /* Fondo claro */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+.contact-container h1 {
+  color: #343a40; /* Color oscuro */
+  font-weight: bold;
+}
+
+.contact-container p {
+  color: #6c757d; /* Texto secundario */
+  font-size: 1.1rem;
+}
+
+/* Formulario de contacto */
+form .form-label {
+  color: #495057;
+}
+
+form .form-control {
+  border-radius: 5px;
+}
+
+form .btn {
+  background-color: #28a745;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #218838;
+}
+
+/* Estilos para la sección de redes sociales */
+.social-link {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover img {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+/* Espaciado y alineación de la sección de redes */
+.container .d-flex {
+  gap: 20px; /* Espacio entre iconos */
+}
+
+@media (max-width: 576px) {
+  .social-link img {
+    width: 30px;
+    height: 30px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/*0*/
+.router-container {
+  position: relative;
+  overflow: hidden;
+}
+.carousel img {
+  width: 40%; /* Ocupa el 100% del ancho del contenedor */
+  height: 10%; /* Ocupa el 100% de la altura del contenedor */
+  object-fit: contain; /* Asegura que la imagen se ajuste sin recortarse */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+
+

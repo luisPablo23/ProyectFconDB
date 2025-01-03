@@ -1,0 +1,172 @@
+.navbar .nav-link {
+    position: relative;
+    color: #333; /* Color inicial del texto */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px; /* Ubicación del subrayado */
+    left: 0;
+    background: linear-gradient(90deg, #00c6ff, #0072ff); /* Degradado celeste */
+    border-radius: 2px;
+    transition: width 0.4s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #0072ff; /* Cambia el color del texto a celeste */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+  
+  .navbar .nav-link:hover::after {
+    width: 100%; /* Subrayado se expande a lo largo del texto */
+  }
+  
+  .navbar .btn {
+    position: relative;
+    color: #fff;
+    background: #6c757d; /* Color inicial del botón */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  
+  .navbar .btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 198, 255, 0.3), rgba(0, 198, 255, 0));
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .navbar .btn:hover::before {
+    transform: scale(1); /* Efecto de destello radial */
+  }
+  
+  .navbar .btn:hover {
+    background: #00c6ff; /* Fondo celeste al pasar el mouse */
+    color: #fff; /* Asegura que el texto sea legible */
+    box-shadow: 0 4px 15px rgba(0, 198, 255, 0.5); /* Resplandor celeste */
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+.navbar {
+  background-color: #212529; /* Fondo oscuro */
+  padding: 1rem 0;
+  border-bottom: 2px solid #343a40; /* Borde oscuro */
+}
+
+.navbar .navbar-brand {
+  color: #ffffff; /* Texto blanco para el logo */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #00c6ff; /* Logo cambia a celeste al pasar el mouse */
+}
+
+.navbar .nav-link {
+  color: #dcdcdc; /* Texto gris claro */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.navbar .nav-link:hover {
+  color: #00c6ff; /* Texto celeste al pasar el mouse */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px; /* Subrayado bajo el texto */
+  left: 0;
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Subrayado celeste */
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%; /* Subrayado se expande */
+}
+
+.navbar .btn {
+  background-color: #343a40; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.navbar .btn:hover {
+  background-color: #00c6ff; /* Botón celeste al pasar el mouse */
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.5); /* Resplandor celeste */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.navbar-toggler {
+  border-color: #ffffff; /* Botón hamburguesa blanco */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='%23ffffff' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M3.5 12.5a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9zm0-5a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9zm0-5a.5.5 0 0 1 0-1h9a.5.5 0 0 1 0 1h-9z'/%3E%3C/svg%3E");
+}
+/*menu*/
+.navbar {
+    background-color: #212529; /* Fondo oscuro */
+    border-bottom: 1px solid #343a40; /* Borde sutil */
+  }
+  
+  .navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #0dcaf0; /* Logo cambia a celeste */
+  }
+  
+  .navbar .nav-link {
+    color: #dcdcdc; /* Texto gris claro */
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #0dcaf0; /* Enlaces cambian a celeste */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+  }
+  
+  .navbar .btn-outline-primary {
+    color: #0dcaf0; /* Botón con contorno celeste */
+    border-color: #0dcaf0;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .btn-outline-primary:hover {
+    background-color: #0dcaf0;
+    color: #ffffff; /* Fondo celeste al pasar el mouse */
+  }
+    

@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold text-light d-flex align-items-center" routerLink="/" routerLinkActive="active">
+      <img src="assets/images/logo.jpg" width="40" height="40" class="me-2">
+      Reparaciones Pablo
+    </a>
+
+    <!-- Botón toggle para móviles -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Enlaces del navbar -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- Enlace a Inicio -->
+        <li class="nav-item">
+          <a
+            class="nav-link text-light fw-semibold px-3"
+            routerLink="/inicio"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            aria-current="page"
+          >
+            Inicio
+          </a>
+        </li>
+
+        <!-- Enlace a Servicios -->
+        <li class="nav-item">
+          <a
+            class="nav-link text-light fw-semibold px-3"
+            routerLink="/servicios"
+            routerLinkActive="active"
+          >
+            Servicios
+          </a>
+        </li>
+
+        <!-- Enlace a Sobre Nosotros -->
+        <li class="nav-item">
+          <a
+            class="nav-link text-light fw-semibold px-3"
+            routerLink="/acercade"
+            routerLinkActive="active"
+          >
+            Sobre Nosotros
+          </a>
+        </li>
+          <!-- Enlace a Sobre graficos -->
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/graficos" routerLinkActive="active">Gráficos</a>
+        </li>                
+
+        <!-- Enlace a Contacto -->
+        <li class="nav-item">
+          <a
+            class="btn btn-outline-primary fw-bold px-4 py-2 ms-lg-3"
+            routerLink="/contact"
+            routerLinkActive="active"
+          >
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
