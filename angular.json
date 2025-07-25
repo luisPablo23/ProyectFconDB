@@ -41,7 +41,7 @@
               "src/styles.css"
             ],
             "scripts": [],
-            "baseHref": "/ProyectFconDB/"
+            "baseHref": ""
           },
           "configurations": {
             "production": {
