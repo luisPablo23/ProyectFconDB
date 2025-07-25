@@ -1,0 +1,8 @@
+.footer {
+  background-color: #343a40; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+}
+
+.footer p {
+  font-size: 14px; /* Ajusta el tamaño del texto */
+}

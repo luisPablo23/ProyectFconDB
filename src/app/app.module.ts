@@ -20,6 +20,13 @@ import { ComponentesComputadoraComponent } from './pages/historia/componentes-co
 import { HistoriaSoftwareComponent } from './pages/historia/historia-software/historia-software.component';
 import { MantenimientoSoftwareComponent } from './pages/mantenimiento/mantenimiento-software/mantenimiento-software.component';
 import { LenguajesDeProgramacionComponent } from './pages/lenguajes-de-programacion/lenguajes-de-programacion.component';
+import { IntroduccionComponent } from './historia-software/introduccion/introduccion.component';
+import { PrimerosLenguajesComponent } from './historia-software/primeros-lenguajes/primeros-lenguajes.component';
+import { SistemasOperativosTempranosComponent } from './historia-software/sistemas-operativos-tempranos/sistemas-operativos-tempranos.component';
+import { EvolucionLenguajesComponent } from './historia-software/evolucion-lenguajes/evolucion-lenguajes.component';
+import { ComputacionPersonalComponent } from './historia-software/computacion-personal/computacion-personal.component';
+import { SistemasOperativosModernosComponent } from './historia-software/sistemas-operativos-modernos/sistemas-operativos-modernos.component';
+import { FuturoSoftwareComponent } from './historia-software/futuro-software/futuro-software.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +48,14 @@ import { LenguajesDeProgramacionComponent } from './pages/lenguajes-de-programac
     ComponentesComputadoraComponent,
     HistoriaSoftwareComponent,
     MantenimientoSoftwareComponent,
-    LenguajesDeProgramacionComponent
+    LenguajesDeProgramacionComponent,
+    IntroduccionComponent,
+    PrimerosLenguajesComponent,
+    SistemasOperativosTempranosComponent,
+    EvolucionLenguajesComponent,
+    ComputacionPersonalComponent,
+    SistemasOperativosModernosComponent,
+    FuturoSoftwareComponent
   ],
   imports: [
     BrowserModule,

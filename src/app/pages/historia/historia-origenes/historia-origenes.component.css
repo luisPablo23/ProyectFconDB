@@ -1,0 +1,136 @@
+/* Estilo para la página de Historia de los Orígenes de la Computadora */
+.container {
+  max-width: 1200px; /* Aumentar el ancho máximo para más espacio */
+  margin-top: 50px;
+}
+
+.card-header {
+  font-size: 1.5rem; /* Aumentar el tamaño de la fuente para el título de la tarjeta */
+  font-weight: bold;
+  background-color: #343a40; /* Fondo oscuro para las tarjetas */
+  color: #fff; /* Texto blanco */
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+  font-size: 1.125rem;
+  background-color: #f8f9fa; /* Fondo claro para las tarjetas */
+  border-radius: 0 0 10px 10px;
+}
+
+.card-body .card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.card-body .card-text {
+  font-size: 1.125rem;
+  color: #495057;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.card-header.bg-primary {
+  background-color: #007bff !important;
+}
+
+.card-header.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+.card-header.bg-success {
+  background-color: #28a745 !important;
+}
+
+.card-header.bg-info {
+  background-color: #17a2b8 !important;
+}
+
+.card-header.bg-danger {
+  background-color: #dc3545 !important;
+}
+
+.card-header.bg-warning {
+  background-color: #ffc107 !important;
+}
+
+.card-body img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.card-body .btn {
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.card-body .btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Asegurar que las imágenes dentro de las tarjetas se ajusten bien */
+.card-body img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para listas */
+ul {
+  list-style-type: square;
+  margin-left: 30px;
+  font-size: 1.1rem;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Margen inferior para las tarjetas */
+.mb-4 {
+  margin-bottom: 30px;
+}
+
+/* Estilo para los enlaces de "Ver Más" */
+.btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-danger, .btn-warning {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .card-header {
+    font-size: 1.25rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-body img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
