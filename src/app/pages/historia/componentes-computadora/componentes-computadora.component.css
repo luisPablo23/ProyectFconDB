@@ -1,0 +1,83 @@
+/* Contenedor principal */
+.container {
+  padding: 2rem;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Descripción general */
+p.lead {
+  font-size: 1.25rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Estilo para las tarjetas */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  font-size: 1rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  line-height: 1.6;
+  color: #6c757d;
+}
+
+/* Imagen estándar para todos los componentes */
+.component-image {
+  width: 100%; /* Ocupa todo el espacio disponible dentro de la tarjeta */
+  height: auto; /* Mantiene la relación de aspecto original */
+  max-height: 250px; /* Establece una altura máxima para que las imágenes no se deformen */
+  object-fit: contain; /* Ajusta las imágenes dentro del contenedor sin cortarlas */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Ajuste en la disposición de los elementos */
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card-body img {
+  max-width: 100%;
+}
+
+/* Ajustes en las columnas para que se adapten mejor en pantallas pequeñas */
+@media (max-width: 768px) {
+  .card-body {
+    flex-direction: column;
+    align-items: center;
+  }
+}
