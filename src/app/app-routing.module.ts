@@ -34,7 +34,7 @@ import { FuturoSoftwareComponent } from './historia-software/futuro-software/fut
 // Rutas de la Aplicación
 const routes: Routes = [
   // Redirección de la raíz a /inicio
-  { path: '', redirectTo: '/inicio', pathMatch: 'full' },
+  { path: '', redirectTo: '/ProyectFconDB/inicio', pathMatch: 'full' },
 
   // Páginas principales
   { path: 'inicio', component: InicioComponent },        // Página principal
@@ -70,11 +70,11 @@ const routes: Routes = [
   { path: 'graficos', loadComponent: () => import('./pages/graficos/graficos.component').then(m => m.GraficosComponent) },
 
   // Redirección para rutas no válidas
-  { path: '**', redirectTo: '/inicio' } // Redirigir a la página de inicio si la ruta es incorrecta
+  { path: '**', redirectTo: '/ProyectFconDB/inicio' } // Redirigir a la página de inicio si la ruta es incorrecta
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: false })], // Habilitar rutas sin hash en el URL
+  imports: [RouterModule.forRoot(routes, { useHash: false })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
