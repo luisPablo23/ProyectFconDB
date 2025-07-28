@@ -1,0 +1,147 @@
+/* ---------------------------------- */
+/* ESTILOS MANTENIMIENTO PREDICTIVO */
+/* ---------------------------------- */
+
+/* Imagen con efecto futurista */
+.predictivo-img {
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(25, 200, 150, 0.2);
+    border: 2px solid #e1f5fe;
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 0 8px rgba(0, 200, 200, 0.1));
+}
+
+.predictivo-img:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 12px rgba(0, 200, 200, 0.2));
+}
+
+/* Tarjetas con estilo tecnológico */
+.predictivo-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1);
+    border: 1px solid rgba(0, 150, 136, 0.1);
+    transition: all 0.4s ease;
+    background: linear-gradient(to bottom, #ffffff, #f5fdfc);
+    overflow: hidden;
+}
+
+.predictivo-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 25px rgba(0, 150, 136, 0.15);
+}
+
+.predictivo-card .card-header {
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    background: linear-gradient(135deg, #009688, #4db6ac);
+    border-bottom: none;
+}
+
+/* Lista con estilo futurista */
+.predictivo-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.predictivo-list li {
+    padding: 10px 15px 10px 40px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: rgba(0, 150, 136, 0.05);
+    border-left: 3px solid #009688;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.predictivo-list li:hover {
+    background-color: rgba(0, 150, 136, 0.1);
+    transform: translateX(5px);
+}
+
+.predictivo-list li:before {
+    content: "→";
+    color: #009688;
+    font-size: 1.2em;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-weight: bold;
+}
+
+/* Botón con estilo futurista */
+.btn-predictivo-youtube {
+    background: linear-gradient(135deg, #00c9ff, #009688);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 15px rgba(0, 201, 255, 0.3);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-predictivo-youtube:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 201, 255, 0.4);
+    color: white;
+}
+
+.btn-predictivo-youtube:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.btn-predictivo-youtube:hover:before {
+    left: 100%;
+}
+
+.btn-predictivo-youtube i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+/* Títulos especiales */
+.predictivo-title {
+    color: #00796b;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.predictivo-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #009688, #b2dfdb);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .predictivo-img {
+        max-width: 95%;
+    }
+    
+    .btn-predictivo-youtube {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    
+    .predictivo-list li {
+        padding: 8px 12px 8px 35px;
+    }
+}
